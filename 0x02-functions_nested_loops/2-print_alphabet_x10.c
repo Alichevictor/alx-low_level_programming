@@ -1,19 +1,25 @@
 #include "main.h"
 
 /**
- * print_alphabet - function that prints the alphabet, lowercase
- * You can only use _putchar twice in your code
+ * print_alphabet_x10 - function that prints 10 times the alphabet,
+ * in lowercase
  * Return: nothing.
  */
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-	int lw = 'a';
+	int l;
+	int n = 0;
 
-	while (lw <= 'z')
+	while (n < 10)
 	{
-		_putchar(lw);
-		lw += 1;
+		l = 'a';
+		while (l <= 'z')
+		{
+			_putchar(l);
+			l += 1;
+		}
+		_putchar(10);
+		n += 1;
 	}
-	_putchar(10);
 }
